@@ -272,7 +272,7 @@ class Trainer(object):
                 or cfg.TRAIN["DATA_TYPE"] == "Customer"
             ):
                 mAP = 0.0
-                if epoch >= self.eval_epoch:
+                if True or epoch >= self.eval_epoch:
                     logger.info(
                         "===== Validate =====".format(epoch, self.epochs)
                     )
